@@ -85,7 +85,7 @@
   \pgfpie@ifx\pgfpie@text\pgfpie@text@inside{%
     % label and number together
     \path (pgfpie@O) -- ++({\pgfpie@midangle}:{\pgfpie@innerpos}) node[align=center]
-    {\pgfpie@scalefont{#3}\pgfpie@labeltext{#4}\\\pgfpie@numbertext{#3}};
+    {\pgfpie@scalefont{#3}\pgfpie@labeltext{#4}\pgfpie@ifhidenumber{}{\\\pgfpie@numbertext{#3}}};
   }{%
     % label
     \pgfpie@ifhidelabel{}{%
